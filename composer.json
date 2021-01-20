@@ -11,8 +11,8 @@
     ],
     "minimum-stability": "stable",
     "require": {
-        "vimeo/psalm": "^3.10",
-        "php": "^7.1",
+        "vimeo/psalm": "^4.0",
+        "php": "^7.3",
         "ext-simplexml": "*"
     },
     "extra": {
