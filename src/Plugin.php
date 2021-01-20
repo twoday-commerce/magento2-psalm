@@ -24,8 +24,7 @@ use Visma\Magento2Psalm\Factory\FactoryMocker;
  */
 class Plugin implements PluginEntryPointInterface
 {
-    /** @return void */
-    public function __invoke(RegistrationInterface $psalm, ?SimpleXMLElement $config = null)
+    public function __invoke(RegistrationInterface $psalm, ?SimpleXMLElement $config = null): void
     {
         $mocker = new FactoryMocker($psalm);
         $mocker->registerAutoloader();
@@ -55,5 +54,4 @@ class Plugin implements PluginEntryPointInterface
             }
         }
     }
-
 }
